@@ -1,0 +1,76 @@
+getgenv().RickWare = {
+    ['Start'] = {
+        ['Intro'] = true,
+    },
+    ['Prediction'] = {
+        ['Horizontal'] = 0.1,
+        ['Vertical'] = 0.1,
+    },
+    ['CamLock'] = {
+        ['Enabled'] = false,
+        ['Smoothness'] = {
+            ['Enabled'] = true,
+            ['Value'] = 0.9,
+        },
+    },
+    ['Target Aim'] = {
+        ['Enabled']= true,
+        ['Lock Type'] = "Namecall", -- Index, Namecall
+    },
+    ['Parts'] = {
+        ['Hitpart'] = "HumanoidRootPart",
+        ['AirPart'] = "LowerTorso",
+    },
+    ['Offsets'] = {
+        ['Jump Offset'] = 0.3,
+        ['Fall Offset'] = 0.27,
+    },
+    ['Auto Air'] = {
+        ['Enabled'] = true,
+        ['Auto Air Button'] = false,
+        ['Delay'] = 0.13,
+    },
+    ['Keybind'] = { -- for pc/controller
+    
+        ['Enabled'] = true,
+        ['Lock'] = Enum.KeyCode.Q,
+        ['Auto Air'] = Enum.KeyCode.C,
+        ['Macro'] = {
+            ['RegularMacro'] = false,
+            ['AutoMacro'] = true,
+            ['Key'] = Enum.KeyCode.X,
+        },
+    },
+    ['Toggle Lock'] = {
+        ['Method'] = "Button", -- Button, Tool, None
+    },
+    ['Rapid Fire'] = { -- hood customs only
+        ['Enabled'] = false,
+        ['Cooldown'] = 0.0001,
+    },
+    ['Macro'] = {
+        ['Enabled'] = true,
+        ['Macro Button'] = false,
+        ['Auto Macro Button'] = true,
+    },
+    ['Lock Button'] = {
+        ['Size'] = UDim2.new(0, 100, 0, 100),
+        ['BackgroundColor'] = Color3.fromRGB(0, 0, 0),
+        ['Transparency'] = 0.3,
+        ['Position'] = UDim2.new(0, 100, 0, 50),
+    },
+    ['Auto Air Button'] = {
+        ['Size'] = UDim2.new(0, 80, 0, 80),
+        ['BackgroundColor'] = Color3.fromRGB(0, 0, 0),
+        ['Transparency'] = 0.3,
+        ['Position'] = UDim2.new(0, 700, 0, 150)
+    },
+    ['Notification'] = {
+        ['Enabled'] = true,
+        ['Sound'] = "rbxassetid://5153734608",
+        ['Time'] = 1.5,
+        ['Audio'] = true,
+    },
+}
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/shakar60/scripts/refs/heads/main/RickWare",true))()
